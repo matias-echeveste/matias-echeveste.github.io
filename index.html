@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mati</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi </a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/Perfil.jpg" alt="">
+            </div>
+            <h1>Matías Echeveste</h1>
+            <h2>Estudiante de Ingeniería y desarrollo web</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/_mati_echeveste/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/mati_echeveste1"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <h1 id="curriculum">Curriculum</h1>
+    <p class="curriculum">
+        Soy una persona responsable y comprometida, priorizo un buen ambiente humano de trabajo. Siempre tengo buena disposición 
+        para realizar mis tareas. Busco un puesto desafiante donde pueda continuar aprendiendo. Me gusta formar parte de una empresa en la 
+        que pueda poner en práctica todos mis conocimientos y que me ofrezca la oportunidad de crecer en el área laboral, personal e 
+        intelectual.
+    </p>
+    <hr>
+    <h1 id="sobremi">Habilidades, conocimientos y educación</h1>
+
+        <ul>
+            <li>Diploma de inglés</li>
+            <li>Diploma operador Microsoft Office</li>
+            <li>Cursos en general</li>
+            <li><strong>Desarrollo web</strong></li>
+        </ul>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Entidad</th>
+                    <th>Promoción</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Bachillerato</td>
+                <td>Colegio Isasa</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>Fase 1 y Desarrollo web</td>
+                <td>Plan ceibal (JaP)</td>
+                <td>2022</td>
+            </tr>
+        </table>
+        <hr>
+        <h1 id="contacto">Contactar</h1>
+    <form action="doc.html" method="get">
+        <label for="para">Para:</label>
+        <input type="text" name="para" id="para" required><br><br>
+        <label for="tema">Temática:</label>
+        <select id="tema" name="tema" required>
+                <option value selected >-- Elige un tema --</option>
+                <option value="consulta">Consulta</option>
+                <option value="propuesta">Propuesta</option>
+                <option value="reporte">Reporte</option>                    
+                <option value="otro">Otro</option>
+        </select><br><br>
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" required><br><br>
+        <label for="cuerpo">Cuerpo:</label>
+        <textarea id="cuerpo" name="cuerpo" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
